@@ -12,7 +12,9 @@ Licensed under the BSD-2 license (see LICENSE file in main directory)
 
 #include <cstddef>
 #include <stddef.h>
+#define HAVE_CSTDDEF
 #include <coin/IpTNLP.hpp>
+#undef HAVE_CSTDDEF
 #include <coin/IpIpoptApplication.hpp>
 #include <coin/IpSolveStatistics.hpp>
 

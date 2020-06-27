@@ -21,7 +21,7 @@ if [ -d "../$1" ]; then
   
   cmake .. ${build_flags[*]}    || { echo "cmake failed"; exit 1; } 
   make -j8                      || { echo "make failed"; exit 1; } 
-  sudo make install  >/dev/null
+  sudo make install  > /tmp/ct
   cd ..
 else
     echo "ERROR: an error occurred during building or installing. Try building manually."
